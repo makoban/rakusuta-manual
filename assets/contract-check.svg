@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="900" viewBox="0 0 780 900" role="img" aria-labelledby="title desc">
+  <title id="title">契約内容を確認する画面イメージ</title>
+  <desc id="desc">1日の投稿回数と画像加工の有無を確認し、変更は楽スタへ連絡することを示す図です。</desc>
+  <rect width="780" height="900" fill="#f0f5f7"/>
+  <rect x="165" y="38" width="450" height="824" rx="38" fill="#172026"/>
+  <rect x="184" y="72" width="412" height="752" rx="28" fill="#ffffff"/>
+  <rect x="214" y="96" width="352" height="64" rx="18" fill="#fff7ed" stroke="#ffd8a8"/>
+  <text x="236" y="135" fill="#8a4300" font-family="Arial,'Hiragino Sans','Yu Gothic',sans-serif" font-size="24" font-weight="800">契約内容を確認</text>
+  <text x="214" y="198" fill="#66737e" font-family="Arial,'Hiragino Sans','Yu Gothic',sans-serif" font-size="16">ここは確認専用です。店舗側では変更しません。</text>
+  <rect x="214" y="240" width="352" height="122" rx="18" fill="#ffffff" stroke="#dfe6ec"/>
+  <text x="236" y="278" fill="#172026" font-family="Arial,'Hiragino Sans','Yu Gothic',sans-serif" font-size="18" font-weight="800">1日の投稿回数</text>
+  <text x="236" y="324" fill="#1463ff" font-family="Arial,'Hiragino Sans','Yu Gothic',sans-serif" font-size="46" font-weight="900">2回</text>
+  <text x="348" y="324" fill="#66737e" font-family="Arial,'Hiragino Sans','Yu Gothic',sans-serif" font-size="15">予約時刻は2つまで</text>
+  <rect x="214" y="392" width="352" height="122" rx="18" fill="#ffffff" stroke="#dfe6ec"/>
+  <text x="236" y="430" fill="#172026" font-family="Arial,'Hiragino Sans','Yu Gothic',sans-serif" font-size="18" font-weight="800">画像加工</text>
+  <rect x="236" y="458" width="112" height="36" rx="18" fill="#effaf4"/>
+  <text x="265" y="482" fill="#125c3e" font-family="Arial,'Hiragino Sans','Yu Gothic',sans-serif" font-size="17" font-weight="800">あり</text>
+  <text x="366" y="481" fill="#66737e" font-family="Arial,'Hiragino Sans','Yu Gothic',sans-serif" font-size="15">写真を自然に整えます</text>
+  <rect x="214" y="546" width="352" height="104" rx="18" fill="#eef5ff" stroke="#b9d2ff"/>
+  <text x="236" y="582" fill="#193b68" font-family="Arial,'Hiragino Sans','Yu Gothic',sans-serif" font-size="17" font-weight="800">予約時刻は回数の範囲で設定</text>
+  <text x="236" y="616" fill="#193b68" font-family="Arial,'Hiragino Sans','Yu Gothic',sans-serif" font-size="15">2回契約なら、時刻1・時刻2を使います。</text>
+  <rect x="214" y="682" width="352" height="96" rx="18" fill="#fff3f2" stroke="#ffcdc8"/>
+  <text x="236" y="717" fill="#b42318" font-family="Arial,'Hiragino Sans','Yu Gothic',sans-serif" font-size="17" font-weight="800">回数や画像加工を変えたい時</text>
+  <text x="236" y="751" fill="#b42318" font-family="Arial,'Hiragino Sans','Yu Gothic',sans-serif" font-size="15">店舗画面ではなく楽スタへ連絡します。</text>
+</svg>

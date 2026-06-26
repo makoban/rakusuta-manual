@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="980" viewBox="0 0 780 980" role="img" aria-labelledby="title desc">
+  <title id="title">店舗プロフィールとAI生成ルールの画面イメージ</title>
+  <desc id="desc">店舗名、所在地、主なサービス、投稿文の雰囲気、NG事項を入力して保存する図です。</desc>
+  <rect width="780" height="980" fill="#edf2f6"/>
+  <rect x="150" y="34" width="480" height="912" rx="40" fill="#172026"/>
+  <rect x="170" y="68" width="440" height="844" rx="30" fill="#ffffff"/>
+  <rect x="198" y="96" width="384" height="70" rx="20" fill="#effaf4" stroke="#b9e3cf"/>
+  <text x="220" y="139" fill="#125c3e" font-family="Arial,'Hiragino Sans','Yu Gothic',sans-serif" font-size="24" font-weight="900">店舗プロフィール</text>
+  <g font-family="Arial,'Hiragino Sans','Yu Gothic',sans-serif">
+    <text x="198" y="205" fill="#172026" font-size="17" font-weight="800">店舗名・ブランド名</text>
+    <rect x="198" y="222" width="384" height="52" rx="13" fill="#ffffff" stroke="#cbd7e3"/>
+    <text x="220" y="254" fill="#172026" font-size="18">〇〇クリニック</text>
+    <text x="198" y="316" fill="#172026" font-size="17" font-weight="800">所在地・エリア</text>
+    <rect x="198" y="333" width="384" height="52" rx="13" fill="#ffffff" stroke="#cbd7e3"/>
+    <text x="220" y="365" fill="#172026" font-size="18">東京・日本橋人形町</text>
+    <text x="198" y="427" fill="#172026" font-size="17" font-weight="800">主なサービス</text>
+    <rect x="198" y="444" width="384" height="82" rx="13" fill="#ffffff" stroke="#cbd7e3"/>
+    <text x="220" y="476" fill="#172026" font-size="17">診療案内、定期検診、</text>
+    <text x="220" y="506" fill="#172026" font-size="17">予防接種</text>
+    <rect x="198" y="568" width="384" height="70" rx="20" fill="#eef5ff" stroke="#b9d2ff"/>
+    <text x="220" y="611" fill="#193b68" font-size="23" font-weight="900">AI生成ルール</text>
+    <text x="198" y="681" fill="#172026" font-size="17" font-weight="800">投稿文の雰囲気</text>
+    <rect x="198" y="698" width="384" height="60" rx="13" fill="#ffffff" stroke="#cbd7e3"/>
+    <text x="220" y="735" fill="#172026" font-size="17">安心感、清潔感、親しみやすさ</text>
+    <text x="198" y="800" fill="#172026" font-size="17" font-weight="800">NG・注意事項</text>
+    <rect x="198" y="817" width="384" height="62" rx="13" fill="#ffffff" stroke="#cbd7e3"/>
+    <text x="220" y="854" fill="#172026" font-size="17">効果保証や未確認情報は書かない</text>
+  </g>
+  <circle cx="594" cy="248" r="22" fill="#ffb020"/>
+  <text x="587" y="256" fill="#172026" font-family="Arial,'Hiragino Sans','Yu Gothic',sans-serif" font-size="22" font-weight="900">1</text>
+  <text x="616" y="254" fill="#8a4300" font-family="Arial,'Hiragino Sans','Yu Gothic',sans-serif" font-size="15" font-weight="800">お店の基本情報</text>
+  <circle cx="594" cy="730" r="22" fill="#ffb020"/>
+  <text x="587" y="738" fill="#172026" font-family="Arial,'Hiragino Sans','Yu Gothic',sans-serif" font-size="22" font-weight="900">2</text>
+  <text x="616" y="736" fill="#8a4300" font-family="Arial,'Hiragino Sans','Yu Gothic',sans-serif" font-size="15" font-weight="800">投稿の書き方</text>
+</svg>

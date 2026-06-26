@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="980" viewBox="0 0 780 980" role="img" aria-labelledby="title desc">
+  <title id="title">投稿時刻とLINE完了通知を設定する画面イメージ</title>
+  <desc id="desc">店舗用設定で予約投稿時刻、業種、LINE完了通知を変更して保存する図です。</desc>
+  <rect width="780" height="980" fill="#edf2f6"/>
+  <rect x="150" y="34" width="480" height="912" rx="40" fill="#172026"/>
+  <rect x="170" y="68" width="440" height="844" rx="30" fill="#ffffff"/>
+  <rect x="198" y="96" width="384" height="70" rx="20" fill="#eef5ff" stroke="#b9d2ff"/>
+  <text x="220" y="139" fill="#193b68" font-family="Arial,'Hiragino Sans','Yu Gothic',sans-serif" font-size="25" font-weight="900">店舗用設定</text>
+  <text x="198" y="204" fill="#66737e" font-family="Arial,'Hiragino Sans','Yu Gothic',sans-serif" font-size="16">日々の運用でよく使う設定です。</text>
+  <g font-family="Arial,'Hiragino Sans','Yu Gothic',sans-serif">
+    <text x="198" y="256" fill="#172026" font-size="18" font-weight="800">投稿時刻 1</text>
+    <rect x="198" y="274" width="168" height="58" rx="14" fill="#ffffff" stroke="#cbd7e3"/>
+    <text x="228" y="311" fill="#172026" font-size="23" font-weight="800">14:00</text>
+    <circle cx="386" cy="276" r="22" fill="#ffb020"/>
+    <text x="379" y="284" fill="#172026" font-size="22" font-weight="900">1</text>
+    <text x="414" y="284" fill="#8a4300" font-size="15" font-weight="800">使いたい時刻を入れる</text>
+    <text x="198" y="382" fill="#172026" font-size="18" font-weight="800">投稿時刻 2</text>
+    <rect x="198" y="400" width="168" height="58" rx="14" fill="#ffffff" stroke="#cbd7e3"/>
+    <text x="228" y="437" fill="#172026" font-size="23" font-weight="800">20:00</text>
+    <text x="198" y="508" fill="#172026" font-size="18" font-weight="800">業種</text>
+    <rect x="198" y="526" width="384" height="58" rx="14" fill="#ffffff" stroke="#cbd7e3"/>
+    <text x="224" y="562" fill="#172026" font-size="19" font-weight="700">店舗・施設</text>
+    <text x="198" y="634" fill="#172026" font-size="18" font-weight="800">LINE完了通知</text>
+    <rect x="198" y="652" width="384" height="58" rx="14" fill="#ffffff" stroke="#cbd7e3"/>
+    <text x="224" y="688" fill="#172026" font-size="19" font-weight="700">送る</text>
+    <circle cx="594" cy="680" r="22" fill="#ffb020"/>
+    <text x="587" y="688" fill="#172026" font-size="22" font-weight="900">2</text>
+    <text x="414" y="714" fill="#8a4300" font-size="15" font-weight="800">投稿後にLINEでお知らせ</text>
+    <rect x="198" y="760" width="384" height="62" rx="18" fill="#1463ff"/>
+    <text x="356" y="800" fill="#ffffff" font-size="21" font-weight="900">保存</text>
+    <circle cx="594" cy="790" r="22" fill="#ffb020"/>
+    <text x="587" y="798" fill="#172026" font-size="22" font-weight="900">3</text>
+    <text x="198" y="865" fill="#66737e" font-size="15">変更後は必ず保存ボタンを押します。</text>
+  </g>
+</svg>

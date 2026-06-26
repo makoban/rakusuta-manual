@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="980" viewBox="0 0 780 980" role="img" aria-labelledby="title desc">
+  <title id="title">楽スタ 店舗ページから設定を開く画面イメージ</title>
+  <desc id="desc">スマホ画面の右上にある設定ボタンを押し、店舗用設定や店舗プロフィールを開く流れの図です。</desc>
+  <rect width="780" height="980" fill="#eef4f6"/>
+  <rect x="210" y="38" width="360" height="904" rx="42" fill="#172026"/>
+  <rect x="226" y="68" width="328" height="844" rx="30" fill="#ffffff"/>
+  <rect x="251" y="86" width="278" height="18" rx="9" fill="#172026"/>
+  <rect x="226" y="117" width="328" height="92" fill="#0d8374"/>
+  <text x="250" y="154" fill="#ffffff" font-family="Arial,'Hiragino Sans','Yu Gothic',sans-serif" font-size="22" font-weight="700">楽スタ 店舗ページ</text>
+  <text x="250" y="184" fill="#dcf7f0" font-family="Arial,'Hiragino Sans','Yu Gothic',sans-serif" font-size="15">投稿一覧と設定を確認できます</text>
+  <rect x="247" y="230" width="190" height="44" rx="16" fill="#e8f7f3"/>
+  <text x="270" y="258" fill="#0b6b60" font-family="Arial,'Hiragino Sans','Yu Gothic',sans-serif" font-size="17" font-weight="700">投稿一覧</text>
+  <rect x="455" y="230" width="72" height="44" rx="16" fill="#1463ff"/>
+  <text x="476" y="258" fill="#ffffff" font-family="Arial,'Hiragino Sans','Yu Gothic',sans-serif" font-size="16" font-weight="700">設定</text>
+  <circle cx="533" cy="224" r="24" fill="#ffb020"/>
+  <text x="526" y="232" fill="#172026" font-family="Arial,'Hiragino Sans','Yu Gothic',sans-serif" font-size="22" font-weight="800">1</text>
+  <path d="M532 247 C546 270 549 290 548 316" fill="none" stroke="#ffb020" stroke-width="6" stroke-linecap="round"/>
+  <rect x="247" y="305" width="280" height="118" rx="18" fill="#f5f8fa" stroke="#dfe6ec"/>
+  <rect x="265" y="323" width="98" height="74" rx="10" fill="#d7e7ff"/>
+  <text x="379" y="345" fill="#172026" font-family="Arial,'Hiragino Sans','Yu Gothic',sans-serif" font-size="17" font-weight="700">投稿準備中</text>
+  <text x="379" y="374" fill="#66737e" font-family="Arial,'Hiragino Sans','Yu Gothic',sans-serif" font-size="14">写真とメモから投稿案を作成</text>
+  <rect x="247" y="443" width="280" height="96" rx="18" fill="#f5f8fa" stroke="#dfe6ec"/>
+  <text x="265" y="476" fill="#172026" font-family="Arial,'Hiragino Sans','Yu Gothic',sans-serif" font-size="17" font-weight="700">次回の予約</text>
+  <text x="265" y="507" fill="#66737e" font-family="Arial,'Hiragino Sans','Yu Gothic',sans-serif" font-size="15">14:00 / 20:00</text>
+  <rect x="226" y="592" width="328" height="320" rx="30" fill="#ffffff"/>
+  <rect x="246" y="615" width="288" height="52" rx="18" fill="#f3f7fb"/>
+  <text x="266" y="648" fill="#172026" font-family="Arial,'Hiragino Sans','Yu Gothic',sans-serif" font-size="20" font-weight="800">店舗用設定</text>
+  <text x="506" y="648" fill="#66737e" font-family="Arial,'Hiragino Sans','Yu Gothic',sans-serif" font-size="22" font-weight="700">×</text>
+  <g font-family="Arial,'Hiragino Sans','Yu Gothic',sans-serif">
+    <rect x="246" y="690" width="288" height="58" rx="16" fill="#fff7ed" stroke="#ffd8a8"/>
+    <text x="268" y="724" fill="#8a4300" font-size="17" font-weight="800">契約内容を確認</text>
+    <rect x="246" y="762" width="288" height="58" rx="16" fill="#eef5ff" stroke="#b9d2ff"/>
+    <text x="268" y="796" fill="#193b68" font-size="17" font-weight="800">投稿時刻・通知を設定</text>
+    <rect x="246" y="834" width="288" height="58" rx="16" fill="#effaf4" stroke="#b9e3cf"/>
+    <text x="268" y="868" fill="#125c3e" font-size="17" font-weight="800">店舗プロフィールを書く</text>
+  </g>
+  <circle cx="214" cy="778" r="24" fill="#ffb020"/>
+  <text x="207" y="786" fill="#172026" font-family="Arial,'Hiragino Sans','Yu Gothic',sans-serif" font-size="22" font-weight="800">2</text>
+  <path d="M236 779 C252 779 261 779 280 779" fill="none" stroke="#ffb020" stroke-width="6" stroke-linecap="round"/>
+  <rect x="68" y="90" width="126" height="70" rx="16" fill="#ffffff" stroke="#b9d2ff"/>
+  <text x="91" y="119" fill="#193b68" font-family="Arial,'Hiragino Sans','Yu Gothic',sans-serif" font-size="16" font-weight="800">右上の</text>
+  <text x="84" y="145" fill="#193b68" font-family="Arial,'Hiragino Sans','Yu Gothic',sans-serif" font-size="16" font-weight="800">設定を押す</text>
+  <path d="M194 128 C288 132 419 174 488 222" fill="none" stroke="#1463ff" stroke-width="5" stroke-dasharray="10 8" stroke-linecap="round"/>
+  <rect x="586" y="700" width="128" height="88" rx="16" fill="#ffffff" stroke="#b9e3cf"/>
+  <text x="612" y="732" fill="#125c3e" font-family="Arial,'Hiragino Sans','Yu Gothic',sans-serif" font-size="16" font-weight="800">見たい項目を</text>
+  <text x="622" y="758" fill="#125c3e" font-family="Arial,'Hiragino Sans','Yu Gothic',sans-serif" font-size="16" font-weight="800">開きます</text>
+  <path d="M586 744 C554 744 536 760 514 780" fill="none" stroke="#08784f" stroke-width="5" stroke-dasharray="10 8" stroke-linecap="round"/>
+</svg>

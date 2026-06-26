@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex,nofollow">
-    <title>楽スタ 店舗用設定 スマホ操作マニュアル</title>
+    <title>楽スタ 店舗用設定マニュアル</title>
     <style>
         :root {
             --ink: #172026;
@@ -20,7 +20,8 @@
             --radius: 8px;
             --shadow: 0 12px 34px rgba(21, 32, 43, .08);
         }
-        * { box-sizing: border-box; }
+        * { box-sizing: border-box; min-width: 0; }
+        html { overflow-x: hidden; }
         body {
             margin: 0;
             color: var(--ink);
@@ -28,9 +29,13 @@
             font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", YuGothic, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
             line-height: 1.75;
             letter-spacing: 0;
+            width: 100%;
+            max-width: 100vw;
+            overflow-x: hidden;
         }
+        h1, h2, h3, p, li, th, td, a, span, strong { overflow-wrap: anywhere; }
         a { color: var(--blue); }
-        .wrap { width: min(980px, calc(100% - 28px)); margin: 0 auto; }
+        .wrap { width: 100%; max-width: 980px; margin: 0 auto; padding: 0 14px; }
         header {
             background: #101820;
             color: #fff;
@@ -44,7 +49,7 @@
         }
         h1 {
             margin: 0;
-            font-size: clamp(1.9rem, 8vw, 2.8rem);
+            font-size: clamp(1.72rem, 6.8vw, 2.65rem);
             line-height: 1.18;
             overflow-wrap: anywhere;
         }
@@ -53,7 +58,10 @@
             color: #dbe6f0;
             font-size: 1rem;
             font-weight: 700;
+            word-break: break-all;
+            line-break: anywhere;
         }
+        .text-line { display: block; }
         .meta {
             display: flex;
             flex-wrap: wrap;
@@ -82,6 +90,8 @@
             background: #eef5ff;
             color: #193b68;
             font-weight: 800;
+            word-break: break-all;
+            line-break: anywhere;
         }
         nav {
             margin-bottom: 18px;
@@ -127,6 +137,8 @@
             color: var(--muted);
             font-size: .94rem;
             font-weight: 700;
+            word-break: break-all;
+            line-break: anywhere;
         }
         .body {
             padding: 18px;
@@ -204,6 +216,89 @@
             margin: 0 0 8px;
             font-size: .98rem;
         }
+        .quick-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 12px;
+            margin: 14px 0 4px;
+        }
+        .quick {
+            padding: 14px;
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            background: #fff;
+        }
+        .quick strong {
+            display: block;
+            color: var(--blue);
+            font-size: .9rem;
+            margin-bottom: 4px;
+        }
+        .quick span {
+            display: block;
+            color: var(--text);
+            font-weight: 800;
+        }
+        .shot {
+            width: 100%;
+            max-width: 360px;
+            margin: 14px 0 18px;
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            background: #fff;
+            overflow: hidden;
+            box-shadow: 0 10px 28px rgba(21, 32, 43, .06);
+        }
+        .shot img {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            background: #eef4f6;
+        }
+        .shot figcaption {
+            padding: 10px 12px;
+            border-top: 1px solid var(--line);
+            color: var(--muted);
+            font-size: .88rem;
+            font-weight: 700;
+        }
+        .shot-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+            margin: 14px 0 18px;
+        }
+        .do-list {
+            display: grid;
+            gap: 8px;
+            margin: 12px 0 16px;
+        }
+        .do-item {
+            display: grid;
+            grid-template-columns: 34px 1fr;
+            gap: 10px;
+            align-items: start;
+            padding: 12px;
+            border: 1px solid #e8eef3;
+            border-radius: 7px;
+            background: #fff;
+        }
+        .do-item b {
+            display: grid;
+            place-items: center;
+            width: 26px;
+            height: 26px;
+            border-radius: 999px;
+            background: var(--blue);
+            color: #fff;
+            font-size: .82rem;
+        }
+        .do-item span {
+            display: block;
+            color: var(--text);
+            font-weight: 760;
+        }
         table {
             width: 100%;
             margin: 12px 0 16px;
@@ -226,9 +321,10 @@
             font-size: .86rem;
         }
         @media (max-width: 720px) {
-            .wrap { width: min(100% - 22px, 980px); }
+            .wrap { width: 100%; max-width: 100%; padding: 0 11px; }
             header { padding: 28px 0 24px; }
-            .cards { grid-template-columns: 1fr; }
+            h1 { font-size: clamp(1.65rem, 7vw, 2rem); line-height: 1.24; }
+            .cards, .quick-grid, .shot-grid { grid-template-columns: 1fr; }
             table {
                 display: block;
                 overflow-x: auto;
@@ -248,31 +344,51 @@
     <header>
         <div class="wrap">
             <p class="eyebrow">楽スタ / お客様用</p>
-            <h1>スマホで店舗用設定を変更する方法</h1>
-            <p class="lead">予約投稿時刻、業種、LINE完了通知、店舗プロフィール、AI生成ルールをスマホから変更するためのマニュアルです。</p>
+            <h1>店舗用設定マニュアル</h1>
+            <p class="lead"><span class="text-line">投稿時刻・店舗情報・AI生成ルールを</span><span class="text-line">確認、変更するためのマニュアルです。</span></p>
             <div class="meta">
                 <span class="pill">最終更新: 2026-06-26</span>
                 <span class="pill">スマホ対応</span>
-                <span class="pill">お客様共有可</span>
+                <span class="pill">お客様向け</span>
             </div>
         </div>
     </header>
 
     <main>
         <div class="wrap">
-            <p class="notice">契約内容、LINEの接続情報、Instagramの接続情報は楽スタ側で管理します。店舗側で変更するのは、投稿時刻と店舗情報だけです。</p>
+            <p class="notice"><span class="text-line">店舗側で変更できる項目</span><span class="text-line">投稿時刻・業種・LINE通知・店舗情報</span><span class="text-line">契約内容や接続情報は楽スタ側で管理します。</span></p>
 
             <nav aria-label="目次">
                 <h2>目次</h2>
+                <a href="#overview">0. このページでできること</a>
                 <a href="#open">1. 設定画面を開く</a>
-                <a href="#contract">2. 契約で決まっていることを見る</a>
-                <a href="#store">3. 店舗用設定を変更する</a>
-                <a href="#profile">4. 店舗プロフィールを入力する</a>
-                <a href="#ai">5. AI生成ルールを入力する</a>
-                <a href="#required">6. 必須表示情報の書き方</a>
-                <a href="#dont-touch">7. 店舗側で変更しないもの</a>
+                <a href="#contract">2. 契約内容を確認する</a>
+                <a href="#store">3. 投稿時刻・通知を設定する</a>
+                <a href="#profile">4. 店舗プロフィールを書く</a>
+                <a href="#ai">5. AI生成ルールを書く</a>
+                <a href="#required">6. 毎回入れる固定情報</a>
+                <a href="#dont-touch">7. 変更しない項目</a>
                 <a href="#trouble">8. 困った時</a>
             </nav>
+
+            <section id="overview">
+                <div class="section-head">
+                    <h2>0. このページでできること</h2>
+                    <p>日々の運用で使う設定だけをまとめています。</p>
+                </div>
+                <div class="body">
+                    <div class="quick-grid">
+                        <div class="quick"><strong>確認する</strong><span>契約内容と投稿回数</span></div>
+                        <div class="quick"><strong>変更する</strong><span>投稿時刻・業種・LINE通知</span></div>
+                        <div class="quick"><strong>整える</strong><span>店舗情報とAI生成ルール</span></div>
+                    </div>
+                    <figure class="shot">
+                        <img src="assets/settings-entry.svg" alt="楽スタの店舗ページから設定を開く画面イメージ">
+                        <figcaption>右上の「設定」から、契約内容・店舗用設定・店舗プロフィールを開きます。</figcaption>
+                    </figure>
+                    <div class="ok">まずは「店舗用設定」で投稿時刻を確認し、次に「店舗プロフィール」でお店の情報を入れてください。</div>
+                </div>
+            </section>
 
             <section id="open">
                 <div class="section-head">
@@ -280,6 +396,10 @@
                     <p>スマホのSafariまたはChromeで開きます。</p>
                 </div>
                 <div class="body">
+                    <figure class="shot">
+                        <img src="assets/settings-entry.svg" alt="設定ボタンと設定メニューの画面イメージ">
+                        <figcaption>投稿一覧または投稿確認画面から「設定」を開き、変更したい項目を選びます。</figcaption>
+                    </figure>
                     <ol class="steps">
                         <li>楽スタから案内された店舗用URLを開きます。</li>
                         <li>ログイン画面が出た場合は、案内されたIDとパスワードでログインします。</li>
@@ -292,10 +412,14 @@
 
             <section id="contract">
                 <div class="section-head">
-                    <h2>2. 契約で決まっていることを見る</h2>
+                    <h2>2. 契約内容を確認する</h2>
                     <p>確認専用です。店舗側では変更できません。</p>
                 </div>
                 <div class="body">
+                    <figure class="shot">
+                        <img src="assets/contract-check.svg" alt="契約内容を確認する画面イメージ">
+                        <figcaption>1日の投稿回数と画像加工の有無を確認します。ここは確認専用です。</figcaption>
+                    </figure>
                     <table>
                         <tr><th>表示</th><th>意味</th></tr>
                         <tr><td>1日の投稿回数</td><td>契約上、1日に自動投稿できる回数です。予約時刻はこの回数の範囲で設定します。</td></tr>
@@ -308,27 +432,35 @@
 
             <section id="store">
                 <div class="section-head">
-                    <h2>3. 店舗用設定を変更する</h2>
+                    <h2>3. 投稿時刻・通知を設定する</h2>
                     <p>日々の運用で一番よく使う設定です。</p>
                 </div>
                 <div class="body">
-                    <ol class="steps">
-                        <li>設定画面で「店舗用設定」を開きます。</li>
-                        <li>「投稿時刻」を変更します。準備できている投稿が、この時刻の枠に順番に入ります。</li>
-                        <li>「業種」を選びます。投稿文の雰囲気や注意事項の初期設定に使われます。</li>
-                        <li>「LINE完了通知」を選びます。送るにすると、Instagram投稿後にLINEへ完了メッセージが届きます。</li>
-                        <li>「保存」を押します。</li>
-                    </ol>
+                    <figure class="shot">
+                        <img src="assets/store-settings.svg" alt="投稿時刻とLINE完了通知を設定する画面イメージ">
+                        <figcaption>投稿時刻、業種、LINE完了通知を設定し、最後に保存します。</figcaption>
+                    </figure>
+                    <div class="do-list">
+                        <div class="do-item"><b>1</b><span>設定画面で「店舗用設定」を開きます。</span></div>
+                        <div class="do-item"><b>2</b><span>「投稿時刻」を変更します。準備できている投稿が、この時刻の枠に順番に入ります。</span></div>
+                        <div class="do-item"><b>3</b><span>「業種」を選びます。投稿文の雰囲気や注意事項の初期設定に使われます。</span></div>
+                        <div class="do-item"><b>4</b><span>「LINE完了通知」を選びます。送るにすると、Instagram投稿後にLINEへ完了メッセージが届きます。</span></div>
+                        <div class="do-item"><b>5</b><span>「保存」を押します。</span></div>
+                    </div>
                     <div class="warn">投稿時刻を空にした場合は、システム側の標準時刻に戻ることがあります。使いたい時刻を必ず入れて保存してください。</div>
                 </div>
             </section>
 
             <section id="profile">
                 <div class="section-head">
-                    <h2>4. 店舗プロフィールを入力する</h2>
+                    <h2>4. 店舗プロフィールを書く</h2>
                     <p>AIが投稿文を書く時の前提情報です。</p>
                 </div>
                 <div class="body">
+                    <figure class="shot">
+                        <img src="assets/profile-ai.svg" alt="店舗プロフィールとAI生成ルールの画面イメージ">
+                        <figcaption>お店の基本情報を入れると、写真に合った投稿文を作りやすくなります。</figcaption>
+                    </figure>
                     <table>
                         <tr><th>項目</th><th>入力例</th><th>使われ方</th></tr>
                         <tr><td>店舗名・ブランド名</td><td>〇〇クリニック</td><td>投稿文に自然に店名を入れる時に使います。</td></tr>
@@ -345,7 +477,7 @@
 
             <section id="ai">
                 <div class="section-head">
-                    <h2>5. AI生成ルールを入力する</h2>
+                    <h2>5. AI生成ルールを書く</h2>
                     <p>投稿文や画像加工の方向性を決めます。</p>
                 </div>
                 <div class="body">
@@ -374,7 +506,7 @@
 
             <section id="required">
                 <div class="section-head">
-                    <h2>6. 必須表示情報の書き方</h2>
+                    <h2>6. 毎回入れる固定情報</h2>
                     <p>投稿文の末尾に毎回そのまま追加したい情報です。</p>
                 </div>
                 <div class="body">
@@ -390,7 +522,7 @@
 
             <section id="dont-touch">
                 <div class="section-head">
-                    <h2>7. 店舗側で変更しないもの</h2>
+                    <h2>7. 変更しない項目</h2>
                     <p>接続や契約に関わる内容です。</p>
                 </div>
                 <div class="body">
